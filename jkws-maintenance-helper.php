@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name:       JKWS Maintenance Helper
+ * Plugin URI:        https://github.com/JosKlever/JKWS-Maintenance-Helper
  * Description:       This plugin is used to run custom code that's used for maintaining your website by Jos Klever Web Support.
  * Version:           0.2.2
  * Requires at least: 5.3
