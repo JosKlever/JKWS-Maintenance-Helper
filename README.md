@@ -15,3 +15,6 @@ There are 2 ways, manual and via MainWP Dashboard.
 2. Enter /mu-plugins/ after the wp-content selection box.
 3. Select all the sites you wish to install the file on.
 4. Upload the file.
+
+## Credits
+The function to exclude image thumbnails from UpdraftPlus backups was based on the code of the plugin ["Exclude Image Thumbnails From UpdraftPlus Backups"](https://wordpress.org/plugins/de-updraftplus-backup-exclude-image-thumbnails/) by [Dream-Encode](https://dream-encode.com/)
