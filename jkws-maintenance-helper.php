@@ -24,6 +24,6 @@ add_filter( 'allow_major_auto_core_updates', '__return_false' );
 
 /** Exclude image thumbnails from UpdraftPlus backups */
 function jkws_updraftplus_exclude_file( $filter, $file ) {
-    return preg_match( "/-\d+x\d+\.(?:png|jpe?g|bmp|tiff|gif|webp)$/", $file ) ? true : $filter;
+    return preg_match( "/-\d+x\d+\.(?:png|jpe?g|bmp|tiff|gif|webp|avif)$/", $file ) ? true : $filter;
 }
 add_filter( 'updraftplus_exclude_file', 'jkws_updraftplus_exclude_file', 10, 2 );
