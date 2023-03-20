@@ -3,7 +3,7 @@
  * Plugin Name:       JKWS Maintenance Helper
  * Plugin URI:        https://github.com/JosKlever/JKWS-Maintenance-Helper
  * Description:       This plugin is used to run custom code that's used for maintaining your website by Jos Klever Web Support.
- * Version:           0.3.1
+ * Version:           0.3.2
  * Requires at least: 5.3
  * Requires PHP:      7.0
  * Author:            Jos Klever
@@ -24,6 +24,6 @@ add_filter( 'allow_major_auto_core_updates', '__return_false' );
 
 /** Exclude image thumbnails from UpdraftPlus backups */
 function jkws_updraftplus_exclude_file( $filter, $file ) {
-    return preg_match( "/-\d+x\d+\.(?:png|jpe?g|bmp|tiff|gif|webp|avif)$/", $file ) ? true : $filter;
+    return preg_match( "/\/uploads\/.+-\d+x\d+\.(?:png|jpe?g|bmp|tiff|gif|webp|avif)$/", $file ) ? true : $filter;
 }
 add_filter( 'updraftplus_exclude_file', 'jkws_updraftplus_exclude_file', 10, 2 );
